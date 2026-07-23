@@ -42,75 +42,88 @@
 
   <section class="hero" id="home">
     <div class="hero-bg">
+      <div class="hero-images" id="heroImages">
+        <img src="assets/hero/slide-1.jpg" alt="Geological subsurface layers" class="hero-img active" data-slide="0">
+        <img src="assets/hero/slide-2.jpg" alt="Terrain mapping and survey" class="hero-img" data-slide="1">
+        <img src="assets/hero/slide-3.jpg" alt="Wind energy infrastructure" class="hero-img" data-slide="2">
+      </div>
+      <div class="hero-overlay"></div>
       <div class="hero-grid"></div>
       <div class="hero-glow"></div>
     </div>
     <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge anim-fade-up">
-          <span class="badge-dot"></span>
-          Trusted by Industry Leaders
+      <div class="hero-content anim-fade-up">
+        <div class="hero-slider" id="heroSlider" tabindex="0" role="region" aria-label="Hero slider">
+          <div class="hero-slide active" data-slide="0">
+
+            <h1 class="hero-title">
+              Trusted by<br>
+              <span class="hero-gradient">Industry Leaders</span>
+            </h1>
+            <p class="hero-desc">
+              Delivering precision geoservices from exploration to execution.
+              We decode the earth's structure to power your projects with
+              data-driven geological intelligence.
+            </p>
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">
+                Our Services
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+          </div>
+          <div class="hero-slide" data-slide="1">
+
+            <h1 class="hero-title">
+              Advanced Geological<br>
+              <span class="hero-gradient">Mapping</span>
+            </h1>
+            <p class="hero-desc">
+              Our multidisciplinary team combines field expertise with cutting-edge
+              remote sensing and GIS technology to deliver precise subsurface
+              models that de-risk your projects.
+            </p>
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">
+                Explore Services
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#about" class="btn btn-outline">About Us</a>
+            </div>
+          </div>
+          <div class="hero-slide" data-slide="2">
+
+            <h1 class="hero-title">
+              Environmental &<br>
+              <span class="hero-gradient">Energy Solutions</span>
+            </h1>
+            <p class="hero-desc">
+              From environmental impact assessments to offshore energy site
+              characterization, we provide the geological intelligence that
+              powers responsible development worldwide.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View Projects
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">Get a Quote</a>
+            </div>
+          </div>
         </div>
-        <h1 class="hero-title anim-fade-up">
-          Subsurface<br>
-          <span class="hero-gradient">Solutions</span><br>
-          Redefined
-        </h1>
-        <p class="hero-desc anim-fade-up">
-          Delivering precision geoservices from exploration to execution.
-          We decode the earth's structure to power your projects with
-          data-driven geological intelligence.
-        </p>
-        <div class="hero-actions anim-fade-up">
-          <a href="#services" class="btn btn-primary">
-            Our Services
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#projects" class="btn btn-outline">View Projects</a>
-        </div>
-        <div class="hero-stats anim-fade-up">
-          <div class="stat">
-            <span class="stat-number" data-target="250">0</span><span class="stat-suffix">+</span>
-            <span class="stat-label">Projects Delivered</span>
+        <div class="hero-slider-nav">
+          <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="hero-slider-dots" id="heroDots">
+            <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number" data-target="18">0</span><span class="stat-suffix">yrs</span>
-            <span class="stat-label">Industry Experience</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number" data-target="35">0</span><span class="stat-suffix">+</span>
-            <span class="stat-label">Expert Team Members</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual anim-fade-up">
-        <div class="hero-card card-strata">
-          <div class="card-layer" style="--depth: 0; --color: var(--color-primary)"></div>
-          <div class="card-layer" style="--depth: 1; --color: var(--color-accent)"></div>
-          <div class="card-layer" style="--depth: 2; --color: var(--color-warm)"></div>
-          <div class="card-layer" style="--depth: 3; --color: var(--color-primary-dark)"></div>
-          <div class="card-label">Subsurface Profile</div>
-        </div>
-        <div class="hero-card card-data">
-          <div class="data-row">
-            <span class="data-dot" style="background: var(--color-primary)"></span>
-            <div class="data-bar" style="width: 85%; --bar-color: var(--color-primary)"></div>
-          </div>
-          <div class="data-row">
-            <span class="data-dot" style="background: var(--color-accent)"></span>
-            <div class="data-bar" style="width: 62%; --bar-color: var(--color-accent)"></div>
-          </div>
-          <div class="data-row">
-            <span class="data-dot" style="background: var(--color-warm)"></span>
-            <div class="data-bar" style="width: 94%; --bar-color: var(--color-warm)"></div>
-          </div>
-          <div class="data-row">
-            <span class="data-dot" style="background: var(--color-primary-dark)"></span>
-            <div class="data-bar" style="width: 73%; --bar-color: var(--color-primary-dark)"></div>
-          </div>
-          <div class="card-label">Geo Analysis</div>
+          <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
         </div>
       </div>
     </div>
@@ -360,7 +373,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
                 <strong>Headquarters</strong>
-                <span>1200 Geology Drive, Suite 400<br>Houston, TX 77002</span>
+                <span>Transamadi, Port Harcourt<br>Rivers State, Nigeria</span>
               </div>
             </div>
             <div class="contact-item">
